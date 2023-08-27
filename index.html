@@ -9,9 +9,10 @@
     <!-- 引入Bootstrap样式表 -->
     <link rel="stylesheet" href="https://jsd.onmicrosoft.cn/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <style>
-        body{
+        body {
             margin: 0 auto;
         }
+
         @media only screen and (max-width: 1440px) {
             #logo {
                 margin-top: 0;
@@ -30,6 +31,16 @@
             font-size: min(max(90px, 7vw), 140px);
             font-weight: bold;
             white-space: nowrap;
+        }
+
+        @media screen and (max-width:750px) {
+            #logo span {
+                font-size: 2rem!important;
+            }
+
+            #enter textarea {
+                margin-left: 29px!important;
+            }
         }
 
         @media only screen and (max-width: 1440px) {
@@ -116,9 +127,9 @@
             white-space: normal;
         }
 
-        .link_list {
+        /* .link_list {
             margin: 30px;
-        }
+        } */
 
         .tu {
             margin-top: 30px;
@@ -168,20 +179,22 @@
 <body>
     <div class="container bg">
         <div id="logo" class="mt-5">
-            <span><img src="https://jsd.onmicrosoft.cn/gh/SHSSEDU/Sci-Hub@main/imgs/ravenround_hs.gif"><span><span>sci-hub</span>
+            <span><img
+                    src="https://jsd.onmicrosoft.cn/gh/SHSSEDU/Sci-Hub@main/imgs/ravenround_hs.gif"><span><span>sci-hub</span>
         </div>
         <form method="POST" action="https://sci-hub.st/">
             <div class="mb-3" id="enter">
 
                 <textarea class="form-control" id="request" name="request" autofocus spellcheck="false"
                     placeholder="输入URL,PMID,DOI,关键字..."></textarea>
-                <button type="submit" class="btn btn-primary"><img src="https://jsd.onmicrosoft.cn/gh/SHSSEDU/Sci-Hub@main/imgs/key.png"
+                <button type="submit" class="btn btn-primary"><img
+                        src="https://jsd.onmicrosoft.cn/gh/SHSSEDU/Sci-Hub@main/imgs/key.png"
                         alt="查询图标"><span>查询</span></button>
             </div>
 
         </form>
         <div id="motto">
-            <span>将知识带给每个人</span>
+            <span>将知识带给每个人</span><br>
             <b>声明：本站点不存储任何相关数据，仅做为导航</b>
         </div>
         <div class="link_list container-fluid">
@@ -265,7 +278,7 @@
         </div>
 
 
-        
+
     </div>
     <div class="container">
         <div class="te">
